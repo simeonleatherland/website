@@ -1,12 +1,6 @@
 @import url(font-awesome.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,600italic,300,600");
 
-/*
-	Dimension by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
 /* Reset */
 
 	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
@@ -73,7 +67,7 @@
 	body {
 		background: #1b1f22;
 	}
-
+	/* intro opening of name */
 		body.is-loading *, body.is-loading *:before, body.is-loading *:after, body.is-switching *, body.is-switching *:before, body.is-switching *:after {
 			-moz-animation: none !important;
 			-webkit-animation: none !important;
@@ -127,6 +121,7 @@
 		line-height: 1.65;
 	}
 
+	/*colour and formation of links such as intro/work/about/contact */
 	a {
 		-moz-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		-webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
@@ -349,6 +344,7 @@
 		text-transform: uppercase;
 	}
 
+	/*styling of the contact tab */
 	input[type="text"],
 	input[type="password"],
 	input[type="email"],
@@ -1198,14 +1194,13 @@
 		#header > * {
 			-moz-transition: opacity 0.325s ease-in-out;
 			-webkit-transition: opacity 0.325s ease-in-out;
-			-ms-transition: opacity 0.325s ease-in-out;
 			transition: opacity 0.325s ease-in-out;
 			position: relative;
 			margin-top: 3.5rem;
 		}
 
 			#header > *:before {
-				content: '';
+				/* content: ''; this has been removed to get rid of a line in the middle */
 				display: block;
 				position: absolute;
 				top: calc(-3.5rem - 1px);
@@ -1223,16 +1218,8 @@
 				display: none;
 			}
 
-		#header .logo {
-			width: 5.5rem;
-			height: 5.5rem;
-			line-height: 5.5rem;
-			border: solid 1px #ffffff;
-			border-radius: 100%;
-		}
-
-			#header .logo .icon:before {
-				font-size: 2rem;
+			#header .icon:before {
+				font-size: 1rem;
 			}
 
 		#header .content {
@@ -1373,13 +1360,8 @@
 					height: calc(2rem + 1px);
 				}
 
-			#header .logo {
-				width: 4.75rem;
-				height: 4.75rem;
-				line-height: 4.75rem;
-			}
 
-				#header .logo .icon:before {
+				#header .icon:before {
 					font-size: 1.75rem;
 				}
 
