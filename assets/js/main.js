@@ -19,6 +19,14 @@ $(document).ready(function() {
 
 });
 
+$("a").click(function(e) { 
+    // Prevent a page reload when a link is pressed
+e.preventDefault(); 
+    // Call the scroll function
+goToByScroll($(this).attr("id"));           
+});
+
+
 function goToByScroll(id){
     // Reove "link" from the ID
 id = id.replace("link", "");
@@ -28,12 +36,7 @@ $('html,body').animate({
     'slow');
 }
 
-$("h4 > a").click(function(e) { 
-    // Prevent a page reload when a link is pressed
-e.preventDefault(); 
-    // Call the scroll function
-goToByScroll($(this).attr("id"));           
-});
+
 
 function setup_progress_bar_animation()
 {
