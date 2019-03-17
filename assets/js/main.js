@@ -19,7 +19,7 @@ $(document).ready(function() {
 
 });
 
-$("a").click(function() {
+$("#helloworlddad").click(function() {
     $('html,body').animate({
         scrollTop: $("#intro").offset().top},
         'slow');
