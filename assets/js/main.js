@@ -7,7 +7,11 @@ $(document).ready(function() {
 
     setup_nivo_lightbox();
     setup_dense();
-
+    $("#helloworlddad").click(function() {
+        $('html,body').animate({
+            scrollTop: $("#intro").offset().top},
+            'slow');
+    });
     $(window).load(function() {
         $(".js-preloader").fadeOut(800, function() {
             $(".js-main-container").fadeIn(800);
@@ -17,13 +21,25 @@ $(document).ready(function() {
         });
     });
 
+    $("h4 a").click(function(e) { 
+        // Prevent a page reload when a link is pressed
+      e.preventDefault(); 
+        // Call the scroll function
+      goToByScroll($(this).attr("id"));           
+  });
+
 });
 
-$("#helloworlddad").click(function() {
+function goToByScroll(id){
+        // Reove "link" from the ID
+    id = id.replace("link", "");
+        // Scroll
     $('html,body').animate({
-        scrollTop: $("#intro").offset().top},
+        scrollTop: $("#"+id).offset().top},
         'slow');
-});
+}
+
+    
 
 function setup_progress_bar_animation()
 {
