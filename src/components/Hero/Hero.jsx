@@ -86,7 +86,7 @@ const Header = () => {
                     target="_blank"
                     aria-label={netname}
                   >
-                    <i className={`fa fa-${netname || 'refresh'} fa-inverse`} />
+                    <i className={`fa fa-${netname} fa-inverse`} />
                   </a>
                 );
               })}

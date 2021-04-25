@@ -22,22 +22,22 @@ export const footerData = {
   networks: [
     {
       id: nanoid(),
-      name: 'linkedin',
+      netname: 'linkedin',
       url: 'https://www.linkedin.com/in/simeonleatherland/',
     },
     {
       id: nanoid(),
-      name: 'github',
+      netname: 'github',
       url: 'https://github.com/simeonleatherland',
     },
     {
       id: nanoid(),
-      name: 'instagram',
+      netname: 'instagram',
       url: 'https://www.instagram.com/simeonleatherland/',
     },
     {
       id: nanoid(),
-      name: 'email',
+      netname: 'email',
       url: 'https://www.instagram.com/simeonleatherland/',
     },
   ],
