@@ -35,10 +35,5 @@ export const footerData = {
       netname: 'instagram',
       url: 'https://www.instagram.com/simeonleatherland/',
     },
-    {
-      id: nanoid(),
-      netname: 'email',
-      url: 'https://www.instagram.com/simeonleatherland/',
-    },
   ],
 };
