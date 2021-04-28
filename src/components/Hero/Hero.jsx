@@ -56,9 +56,9 @@ const Header = () => {
                   startDelay={1000}
                   onTypingDone={() => setIsTypingDone(true)}
                 >
-                  I am a <span className="text-color-secondary">human</span>
+                  I am a<span className="text-color-secondary">coder</span>
                   <Typist.Backspace count={5} delay={500} avgTypingDelay={100} />
-                  <span className="text-color-secondary">coder</span>
+                  <span className="text-color-secondary">human</span>
                   <Typist.Backspace count={10} delay={1000} avgTypingDelay={100} />
                   love <span className="text-color-secondary">making music</span>
                   <Typist.Backspace count={12} delay={1000} avgTypingDelay={100} />
